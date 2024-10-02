@@ -204,3 +204,38 @@ After completing everything above, you should be able to answer (and understand 
 [303]: https://en.wikipedia.org/wiki/Lock_(computer_science)
 [304]: https://dart.dev/language/concurrency
 [401]: https://en.wikipedia.org/wiki/Exponential_backoff
+
+
+Here are the questions and answers in markdown format:
+
+### 1. What is multitasking? Why it exists? How is it used for solving CPU-bound and I/O-bound problems?
+
+Multitasking is the ability of a computer to perform multiple tasks or operations simultaneously. It exists because it allows for more efficient use of processing power and can improve system performance. Multitasking is used for solving CPU-bound and I/O-bound problems by allowing multiple tasks to share the available processing resources and by allowing tasks to wait for I/O operations to complete.
+
+### 2. What is preemptive multitasking? What is cooperative multitasking? Which one is used in Dart?
+
+Preemptive multitasking involves the operating system temporarily suspending a task and giving control to another task. Cooperative multitasking involves a task voluntarily giving up control to another task. Dart uses cooperative multitasking.
+
+### 3. What is asynchronous programming and when do we need it? How is it represented in Dart?
+
+Asynchronous programming is a programming paradigm that allows for multiple tasks to be executed concurrently, using non-blocking I/O operations. It is needed when dealing with I/O-bound problems or when performing multiple tasks concurrently. In Dart, asynchronous programming is represented using the `Future` and `Stream` abstractions, as well as the `async` and `await` keywords.
+
+### 4. What is a Stream and how this abstraction is useful? Give some real-world examples of using it.
+
+A Stream is a sequence of asynchronous events. It is useful for processing continuous data streams, such as network data, file I/O, or user input. Real-world examples of using Streams include processing WebSocket messages, handling mouse movement, or processing audio or video files.
+
+### 5. What is a Timer and how this abstraction is useful? Give some real-world examples of using it.
+
+A Timer is an abstraction for scheduling a task to be executed at a later time. It is useful for scheduling tasks that need to be performed at specific times or intervals. Real-world examples of using Timers include scheduling tasks to be executed at a specific time of day, sending reminders, or scheduling tasks to be executed at regular intervals.
+
+### 6. How does Dart handles multiple Isolates? How do they communicate with each other? How to share memory between Isolates?
+
+Dart uses isolates for running tasks concurrently. Isolates are independent and communicate with each other using message passing. To share memory between isolates, you can use shared memory objects or message passing.
+
+### 7. How Isolate.spawn and Isolate.spawnUri are different?
+
+`Isolate.spawn` is used to spawn a new isolate and run a Dart function in it. `Isolate.spawnUri` is used to spawn a new isolate and run a Dart script in it.
+
+### 8. What is concurrency and how is it different from parallelism? How both are represented in Dart?
+
+Concurrency is the ability of a program to perform multiple tasks simultaneously, using a single thread of execution. Parallelism is the ability of a program to perform multiple tasks simultaneously, using multiple threads of execution. Both are represented in Dart using the `Isolate` and `Stream` abstractions. Concurrency is used for solving I/O-bound problems, while parallelism is used for solving CPU-bound problems.

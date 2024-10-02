@@ -157,3 +157,18 @@ After completing everything above, you should be able to answer (and understand 
 [22]: https://docs.flutter.dev/data-and-backend/json
 [23]: https://medium.com/theotherdev-s/starting-with-flutter-json-serialization-af285ec93e99
 [24]: https://aloisdeniel.github.io/flutter-json-serialization
+
+
+Here are the questions and answers in markdown format:
+
+**What is serialization? Why is it used? What problems does it solve?**
+Serialization is the process of converting an object or data structure into a format that can be written to a file or database, or transmitted over a network. It is used to store or transmit data in a format that can be easily read and reused by the same or a different application. Serialization solves the problem of how to persist and transport data between different parts of a program, or between different programs, in a way that is platform-independent and language-independent.
+
+**How serialization is represented in Dart? Describe and explain core abstractions.**
+In Dart, serialization is represented through the `dart:convert` library, which provides the core abstractions and implementations for most often used formats (like JSON or Base64). The `dart:convert` library provides the `JsonEncoder` and `JsonDecoder` classes, which are used to convert Dart objects to and from JSON format.
+
+**What are good practices when implementing a serializable type? Why?**
+Good practices when implementing a serializable type include providing `fromJson` and `toJson` methods, defining the structure of the serialized data, and using clear and consistent naming conventions. These practices help ensure that the serialized data can be easily read and understood by other applications, and that the serialization and deserialization process is efficient and reliable.
+
+**How code generation can help with serialization? When is it better to use it? When not?**
+Code generation can help with serialization by automating the process of creating the necessary code to serialize and deserialize objects. For example, the `json_serializable` package can generate the necessary `fromJson` and `toJson` methods for a given class, making it easier to implement serialization and deserialization. Code generation is useful when working with large and complex data structures, or when working with multiple serialization formats. However, when working with simple data structures or custom serialization formats, it may be better to implement serialization and deserialization manually.

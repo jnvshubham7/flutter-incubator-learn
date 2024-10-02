@@ -124,3 +124,16 @@ After completing everything above, you should be able to answer (and understand 
 [23]: https://habr.com/ru/post/498042
 [24]: https://rust-unofficial.github.io/patterns/patterns/behavioural/newtype.html
 [25]: https://en.wikipedia.org/wiki/Boilerplate_code
+
+
+Here are the questions and answers in markdown format:
+
+### Questions
+
+#### 1. Why should you be explicit about types in [Dart]?
+
+**Answer**: To reduce the probability of incorrect program by providing more information to the compiler at compile-time.
+
+#### 2. What is a [newtype idiom][21] and why is it useful?
+
+**Answer**: A [newtype idiom][21] is a type with a distinct identity but with the same representation (and, often, behavior) as the existing type it wraps. It is useful to ensure types are correct at compile-time, make code more understandable for developers, and enforce desired invariants on values of the type.

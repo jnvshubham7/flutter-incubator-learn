@@ -47,3 +47,16 @@ After completing everything above, you should be able to answer (and understand 
 [4]: https://www.darttutorial.org/dart-tutorial/dart-generics
 [5]: https://dart.academy/generics-in-dart-and-flutter
 [6]: https://medium.flutterdevs.com/explore-generics-in-dart-flutter-6dd62b6f3ed4
+
+
+Here are the questions and answers in Markdown format:
+
+### Questions
+
+#### Q1: What are generics in [Dart]? Why are they useful?
+
+A1: Generics in Dart represent the main form of parametric polymorphism, allowing a single piece of code to be given a "generic" type, using variables in place of actual types, and then instantiated with particular types as needed. They are useful because they can save you the trouble of creating multiple interfaces and classes for different types, instead allowing you to create a single interface or class that can work with multiple types.
+
+#### Q2: What is a type parameter? How can a type parameter be constrained?
+
+A2: A type parameter is a placeholder for a type that will be defined later. In the example of `abstract class Cache<T>`, `T` is a type parameter. A type parameter can be constrained by specifies a set of possible types that the type parameter can be. For example, in the `Cache<K, V>` class, `K` and `V` are type parameters that can be constrained to extend `Comparable`.

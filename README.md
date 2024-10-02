@@ -152,3 +152,50 @@ Inspired by [Rust Incubator].
 [2]: https://github.com/team113/flutter-incubator/subscription
 [11]: https://help.github.com/en/articles/creating-a-repository-from-a-template
 [12]: https://help.github.com/en/articles/inviting-collaborators-to-a-personal-repository
+
+
+Here are all the questions and answers marked with code:
+
+**Step 0: 0_dart_basics**
+
+* What is the Dart language?
+	+ Answer: **Dart is a programming language designed by Google for building web, mobile and desktop applications**.
+* What is the Flutter framework?
+	+ Answer: **Flutter is an open-source mobile app development framework created by Google**.
+
+**Step 1: 1_dart_concepts**
+
+* What are the main data types in Dart?
+	+ Answer: **In Dart, the main data types are numbers (int, double), strings, booleans, lists, maps and null**.
+* What is the concept of null safety in Dart?
+	+ Answer: **In Dart, null safety means that the compiler checks for null values at compile-time, preventing null pointer exceptions**.
+
+**Step 1.1: 1_dart_concepts/1_1_mixins**
+
+* What is a mixin in Dart?
+	+ Answer: **A mixin is a class that provides a way to reuse code without inheritance**.
+* How do you use a mixin in Dart?
+	+ Answer: **You can use a mixin by implementing the mixin's methods in your class**.
+
+**Step 1.2: 1_dart_concepts/1_2_async**
+
+* What is asynchronous programming in Dart?
+	+ Answer: **Asynchronous programming in Dart allows you to write code that can perform multiple tasks concurrently**.
+* How do you use Future and async/await in Dart?
+	+ Answer: **You can use Future and async/await to write asynchronous code that is easier to read and maintain**.
+
+**Step 1.3: 1_dart_concepts/1_3_generics**
+
+* What are generics in Dart?
+	+ Answer: **In Dart, generics allow you to define a type that can be used with different subclasses**.
+* How do you use generics in Dart?
+	+ Answer: **You can use generics by defining a class or method with a type parameter**.
+
+**Step 1.4: 1_dart_concepts/1_4_conditional_compilation**
+
+* What is conditional compilation in Dart?
+	+ Answer: **In Dart, conditional compilation allows you to include or exclude code based on a condition**.
+* How do you use conditional compilation in Dart?
+	+ Answer: **You can use conditional compilation by using the #if directive to include or exclude code based on a condition**.
+
+Let me know if you want the answers to any of the other steps!

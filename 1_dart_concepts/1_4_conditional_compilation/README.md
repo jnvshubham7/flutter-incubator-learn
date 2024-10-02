@@ -86,3 +86,24 @@ After completing everything above, you should be able to answer (and understand 
 [5]: https://dart.dev/guides/libraries/create-library-packages#conditionally-importing-and-exporting-library-files
 [6]: https://gpalma.pt/blog/conditional-importing
 [7]: https://mrale.ph/dartvm
+
+
+Here are the questions and answers in markdown format:
+
+### Questions
+
+#### How [Dart] compiles to and works on native platforms? In web?
+
+Answer: Dart's compiler technology lets you run code in different ways. For apps targeting mobile and desktop devices, Dart includes both a Dart VM with just-in-time (JIT) compilation and an ahead-of-time (AOT) compiler for producing machine code. For apps targeting the web, Dart can compile for development or production purposes. Its web compiler translates Dart into JavaScript.
+
+#### What is [Dart] VM? How does it work?
+
+Answer: Dart's Virtual Machine (VM) is a runtime environment that executes Dart code. It is a part of the Dart compiler technology. The VM interprets Dart code and compiles it just-in-time (JIT) to machine code. This allows Dart code to run directly on the platform without the need for a separate VM.
+
+#### Why may some libraries be unavailable in web or natively?
+
+Answer: Some libraries may be unavailable in web or natively because they are specific to a particular platform. For example, the `dart:io` library is not available in the browser because it supports direct I/O operations, which are not allowed in a browser due to sandbox restrictions.
+
+#### How to check whether [Dart] supports a library on the platform it compiles on?
+
+Answer: To check whether Dart supports a library on the platform it compiles on, you can check for the presence of `dart:*` libraries. For example, you can use `dart.library.io` to check if the library is available on the native platform, and `dart.library.html` to check if it is available on the web platform.

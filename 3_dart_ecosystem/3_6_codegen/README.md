@@ -211,3 +211,40 @@ After completing everything above, you should be able to answer (and understand 
 [24]: https://dart.dev/tools/build_runner
 [31]: https://dart.dev/language/metadata
 [41]: https://infinum.com/handbook/flutter/basics/code-generation
+
+
+Here are the answers to the questions provided in the markdown file:
+**Step 3.6: Code generation**
+
+## Questions
+
+After completing everything above, you should be able to answer (and understand why) the following questions:
+
+1. What is code generation? Which problems does it solve and how?
+
+Answer: Code generation is a process of automatically generating code from a set of rules or templates. It solves the problem of boilerplate code by generating repetitive code that can be manually written. This saves time and reduces the risk of errors.
+
+2. How code generations is represented in [Dart]?
+
+Answer: Code generation in Dart is represented through the use of Builders, which are classes that generate code based on certain rules or configurations. Builders are used to generate boilerplate code, serialization code, and other types of code.
+
+3. How [`Builder`]s are registered and used in a [Dart] project?
+
+Answer: Builders are registered by creating a function that returns an instance of the Builder class. This function is then added to the `build.yaml` file, which customizes the build behavior of a package. The Builder is then used to generate code in the `build_runner` build process.
+
+4. What is the purpose of [`analyzer`], and `source_gen` packages? Why do we need them for code generation in [Dart]?
+
+Answer: The `analyzer` package is used for static analysis of Dart code, while the `source_gen` package provides a framework for writing Builders that consume and produce Dart code. We need these packages for code generation in Dart because they provide the necessary tools and infrastructure for generating code that is correct, efficient, and maintainable.
+
+5. What are annotations in [Dart]? How are custom annotations created? How they can be used and why?
+
+Answer: Annotations in Dart are a way to add metadata to code. Custom annotations are created by defining a class that extends the `Annotation` class. Annotations can be used to customize code generation, serialization, and other processes. They can also be used to provide additional information to tools and libraries.
+
+6. Which are good practices of code generation in [Dart] ecosystem?
+
+Answer: Good practices of code generation in the Dart ecosystem include:
+
+* Generating source code files with a `.g.dart` extension
+* Excluding generated files from the analysis options
+* Committing generated files to version control
+* Avoiding manual editing of generated files

@@ -102,3 +102,51 @@ After completing everything above, you should be able to answer (and understand 
 [13]: https://github.com/dart-lang/language/blob/main/accepted/2.7/static-extension-methods/feature-specification.md
 [21]: https://dart.dev/language/mixins
 [22]: https://medium.com/flutter-community/dart-what-are-mixins-3a72344011f3
+
+
+Here are all questions and answers marked in markdown format:
+
+### Questions
+===============
+
+#### Extension Questions
+
+* Why do you need to extend classes? Name some examples.
+* Can extension be private? Unnamed? Generic?
+* How to resolve naming conflicts when multiple extensions define the same methods?
+
+#### Mixins Questions
+
+* What is reasoning behind mixins? Why would you need them? Provide some examples.
+* Can you add static methods and/or fields to mixins?
+* `class`, `mixin`, or `mixin class`? What are differences? When to use each one?
+
+### Answers
+===============
+
+#### Extension Questions
+
+* Why do you need to extend classes? Name some examples.
+    * You need to extend classes to add functionality to existing types in foreign libraries. For example, implementing an extension on the `String` class to provide methods for parsing links.
+    * Example: `String` class, adding method for parsing links
+* Can extension be private? Unnamed? Generic?
+    * Yes, you can make extension private, unnamed and even generic.
+    * For example:
+        * Private: `extension MyExtension on String { ... }`
+        * Unnamed: `extension on String { ... }`
+        * Generic: `extension<T> on List<T> { ... }`
+* How to resolve naming conflicts when multiple extensions define the same methods?
+    * Use a unique name for your extension method. If the name is not unique, you may need to use a different approach or wrapper.
+
+#### Mixins Questions
+
+* What is reasoning behind mixins? Why would you need them? Provide some examples.
+    * Mixins allow you to add functionality to classes that have no direct inheritance relationship. It lets you share code among classes without requiring them to share a common ancestor.
+    * For example: Implementing a `Printable` mixin for various types.
+* Can you add static methods and/or fields to mixins?
+    * Yes, you can add static methods and/or fields to mixins.
+    * For example: `mixin Printable { static void print(x) { ... } }`
+* `class`, `mixin`, or `mixin class`? What are differences? When to use each one?
+    * `class` is used for a class.
+    * `mixin` is used for a mixin that can be used with the `with` keyword.
+    * `mixin class` is not a valid keyword in Dart.

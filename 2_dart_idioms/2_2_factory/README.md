@@ -140,3 +140,27 @@ After completing everything above, you should be able to answer (and understand 
 [25]: https://medium.com/nerd-for-tech/factory-constructor-in-dart-part-1-1bbdf0d0f7f0
 [26]: https://medium.com/nerd-for-tech/named-constructor-vs-factory-constructor-in-dart-ba28250b2747
 [27]: https://dart-tutorial.com/object-oriented-programming/factory-constructor-in-dart
+
+
+Here are the questions and answers from the Markdown file:
+
+Questions: 
+- What are benefits of using named constructors? When should I use them?
+- What are benefits of using factory constructors? When should I use them?
+- How do both differ?
+
+Answers: 
+1. What are benefits of using named constructors? When should I use them?
+- Named constructors provide clarity by giving a descriptive name to a constructor, making it easier for other developers to understand its purpose and use-case.
+- It also provides encapsulation by restricting access to certain parts of object's initialization, helping to ensure that the object is created in a valid and consistent state.
+- It promotes code reuse by factoring out common initialization logic.
+- Use named constructors when you want to provide a more specific way of creating objects, and the initialisation logic is complex or requires setup that requires more than just the constructor parameters.
+
+2. What are benefits of using factory constructors? When should I use them?
+- Factory constructors allow you to have control over object creation, including whether to create a new one, or take it from a pool of objects (for example, a cache).
+- They also allow you to return subtypes of the class being constructed, allowing you to create different types of objects, depending on input parameters.
+- Use factory constructors when you want to create objects in a controlled manner, or when you want to reuse objects from a cache.
+
+3. How do both differ?
+- Named constructors are similar to regular constructors, except they have a name and can be called using the name, whereas regular constructors can only be called using the class name.
+- Factory constructors are similar to named constructors, except they don't always create a new instance of the class, and can return subtypes of the class being constructed.
